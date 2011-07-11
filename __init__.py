@@ -7,7 +7,7 @@ interface to a Stata dataset (requires scikits.statsmodels, Stata file version
 import csv
 import os
 
-class StataDataset(Dataset):
+class StataDataset:
 
     def __init__(self, filename="test_stata.dta", key='GISJOIN', path=None):
         self.key = key
